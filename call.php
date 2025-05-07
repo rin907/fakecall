@@ -78,11 +78,11 @@ class prankCall{
 	private function randStr($l){
 		$data = "abcdefghijklmnopqrstuvwxyz1234567890";
 		$word = "";
-		for($a=0;$a<$l;$a++){
-			$word .= $data{rand(0,strlen($data)-1)};
-		}
-		return $word;
-	}
+for ($a = 0; $a < $l; $a++) {
+    $word .= $data[rand(0, strlen($data) - 1)];
+}
+return $word;
+
 	public function run(){
 		while(true){
 			echo "?Loop(y/n)		";
